@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 文件表单
+method提交方式只能是post
+ -->
+<form method="post" action="../FileUploadController?type=add" enctype="multipart/form-data">
+	<!-- 普通表单元素 -->
+	<input type="text" name="title" />
+	<input type="text" name="auth" />
+	<!-- 文件域 -->
+	<input type="file" name="photo" />
+	<input type="file" name="photo" />
+	<input type="submit" value="保存" />
+</form>
+</body>
+</html>

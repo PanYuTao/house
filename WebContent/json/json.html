@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//json对象
+var obj = {"id":1,"name":"jack","marry":false};
+document.write("<h3>json对象访问</h3>")
+document.write(obj.id+":"+obj.name+":"+obj.marry);
+//json数组,数组元素是简单的字符串
+var array = ["jack","rose","marry"];
+document.write("<h3>json数组访问，下标</h3>");
+for (var i = 0; i < array.length; i++) {
+	var name = array[i];
+	document.write(name+",");
+}
+//list数组中数组元素是对象
+var pageInfo = {"pageNum":1,"pageSize":5,list:[{"id":1,"name":"jack"},{"id":2,"name":"rose"}]}
+document.write("<h3>pageInfo</h3>");
+document.write(pageInfo.pageNum+":"+pageInfo.pageSize+"<br/>");
+for (var i = 0; i < pageInfo.list.length; i++) {
+	var deptObj = pageInfo.list[i];
+	document.write(deptObj.id+":"+deptObj.name)
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
